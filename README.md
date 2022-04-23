@@ -1,5 +1,7 @@
 # ansible-role-promtail
 
+[![CircleCI](https://circleci.com/gh/SimplyVanilla/ansible-role-promtail/tree/main.svg?style=svg)](https://circleci.com/gh/SimplyVanilla/ansible-role-promtail/tree/main)
+
 Ansible role to install [promtail](https://grafana.com/docs/loki/latest/clients/promtail/) on Debian-like systems.
 
 ## Role Variables

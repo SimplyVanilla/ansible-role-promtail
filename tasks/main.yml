@@ -1,7 +1,7 @@
 ---
 
 - name: get current promtail version
-  command: /usr/local/bin/promtail -version
+  ansible.builtin.command: /usr/local/bin/promtail -version
   register: promtail_current
   ignore_errors: yes
   changed_when: no
