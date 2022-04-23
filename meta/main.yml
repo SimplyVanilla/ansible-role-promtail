@@ -1,0 +1,25 @@
+---
+
+galaxy_info:
+  role_name: promtail
+  namespace: simplyvanilla
+  author: Netherwhal
+  description: Installs & configures promtail on Debian-like systems.
+  license: GPLv3
+  min_ansible_version: '2.10'
+  platforms:
+  - name: Ubuntu
+    versions:
+      - focal
+      - bionic
+  - name: Debian
+    versions:
+      - bullseye
+      - buster
+  galaxy_tags:
+    - logs
+    - logging
+    - loki
+    - grafana
+    - system
+dependencies: []
