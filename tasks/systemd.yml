@@ -1,0 +1,11 @@
+---
+
+- name: add systemd service
+  ansible.builtin.copy:
+    src: promtail.service
+    dest: /lib/systemd/system/promtail.service
+    mode: '0644'
+  become: yes
+  notify:
+    - reload_systemd
+    - restart_promtail

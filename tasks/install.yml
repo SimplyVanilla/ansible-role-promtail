@@ -1,0 +1,14 @@
+---
+
+- name: download promtail
+  ansible.builtin.unarchive:
+    src: https://github.com/grafana/loki/releases/download/v{{ promtail_version }}/promtail-linux-amd64.zip
+    dest: /tmp
+    remote_src: yes
+
+- name: move promtail
+  ansible.builtin.copy:
+    src: /tmp/promtail-linux-amd64
+    dest: /usr/local/bin/promtail
+    mode: 'a+x'
+  become: yes
