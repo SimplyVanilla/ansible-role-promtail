@@ -1,0 +1,13 @@
+---
+
+- name: reload_systemd
+  ansible.builtin.systemd:
+    daemon_reload: yes
+  become: yes
+
+- name: restart_promtail
+  ansible.builtin.systemd:
+    name: promtail
+    state: restarted
+    enabled: yes
+  become: yes

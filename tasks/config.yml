@@ -1,0 +1,13 @@
+---
+
+- name: create /etc/promtail
+  ansible.builtin.file:
+    name: /etc/promtail
+    state: directory
+  become: yes
+
+- name: example promtail.yaml
+  ansible.builtin.copy:
+    src: promtail.yaml
+    dest: /etc/promtail/promtail.yaml
+  become: yes
