@@ -11,4 +11,5 @@
     src: /tmp/promtail-linux-amd64
     dest: /usr/local/bin/promtail
     mode: 'a+x'
+    remote_src: yes
   become: yes

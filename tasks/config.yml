@@ -10,4 +10,5 @@
   ansible.builtin.copy:
     src: promtail.yaml
     dest: /etc/promtail/promtail.yaml
+    force: no
   become: yes
